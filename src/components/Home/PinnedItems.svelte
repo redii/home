@@ -11,7 +11,7 @@
           {#each pinnedItems as repo}
           <div class="column col-6 col-xs-12 pinnedItem">
             <img class="text-primary" src={repo.openGraphImageUrl} alt="repo picture" />
-            <h3 class="text-primary"><a href="#">{repo.name}</a></h3>
+            <h1 class="text-primary"><a href="/">{repo.name}</a></h1>
             <p>{repo.description} <a href={repo.url}>More...</a></p>
           </div>
           {/each}
@@ -27,8 +27,8 @@
   padding: 0 1em;
 }
 
-.pinnedItem h3 {
-  font-size: 1.2em;
+.pinnedItem h1 {
+  font-size: 1em;
 }
 
 .pinnedItem p {
@@ -37,7 +37,7 @@
 
 img {
   width: 100%;
-  height: 12em;
+  height: 10em;
   border: 1px solid;
   border-radius: 1em;
   margin-bottom: 0.5em;

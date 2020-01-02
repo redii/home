@@ -6,7 +6,7 @@ import Loading from './components/Loading.svelte'
 import Header from './components/Header.svelte'
 import Home from './components/Home/Home.svelte'
 
-const token = "TOKEN HERE"
+const token = "608942c22de57d77517340da52372fa69a5e7e29"
 
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',

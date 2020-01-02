@@ -2,7 +2,9 @@
   "name": "home",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "npm run buildcss && rollup -c && npm run buildzip",
+    "buildcss": "./node_modules/node-sass/bin/node-sass ./scss/spectre.scss -o ./public/",
+    "buildzip": "zip -r build.zip public/",
     "dev": "rollup -c -w",
     "start": "sirv public"
   },
@@ -13,6 +15,7 @@
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
+    "node-sass": "^4.13.0",
     "svelte": "^3.0.0"
   },
   "dependencies": {
