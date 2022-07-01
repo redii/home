@@ -1,0 +1,19 @@
+name: Henry Akmann
+dp: https://avatars.githubusercontent.com/u/14221837
+description: "
+  <p>
+    Hey, I am a software developer from Hanover, Germany 👋
+  </p>
+  <br/>
+  <p>
+    You can find most of my projects on <a href='https://github.com/redii' target='_blank'>Github</a>
+  </P>
+"
+email: akmann.henry@gmail.com
+contact:
+  - title: email
+    url: mailto:akmann.henry@gmail.com
+  - title: github
+    url: https://github.com/redii
+  - title: linkedin
+    url: https://www.linkedin.com/in/henry-akmann-4a0329166/
