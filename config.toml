@@ -1,4 +1,4 @@
-baseURL = "https://akmnn.de"
+baseURL = "https://akmnn.de/"
 languageCode = "de-DE"
 title = "Henry Akmann"
 rssLimit = 20
