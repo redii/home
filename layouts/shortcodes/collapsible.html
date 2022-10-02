@@ -1,0 +1,34 @@
+<a class="collapsible" type="button" onclick="toggleCollapse(this)">
+  {{.Get `label`}} +
+</a>
+<div class="collapsible-content" style="display: none;">
+  <p>{{.Inner | markdownify}}</p>
+</div>
+
+<script>
+var toggleCollapse = (element) => {
+  element.classList.toggle("active");
+  var content = element.nextElementSibling;
+  if (content.style.display === "block") {
+    element.innerHTML = element.innerHTML.replace("-", "+");
+    content.style.display = "none";
+  } else {
+    element.innerHTML = element.innerHTML.replace("+", "-");
+    content.style.display = "block";
+  }
+}
+</script>
+
+<style>
+.collapsible {
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.collapsible-content {
+  margin-top: 1em;
+  padding: 0 1em;
+  border: 1px solid;
+  border-radius: 6px;
+}
+</style>

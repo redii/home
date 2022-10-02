@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{ partial "head.html" . }}
+	<body>
+		<main>
+      <header>
+        <a class="site-title" href="/itadm" style="font-size:2em">Henry Akmann</a>
+        <br/>
+        <a href="{{ .Parent.URL }}" style="color: cyan">Zurück</a>
+      </header>
+      <div class="content">{{ .Content }}</div>
+			<section class="articles">
+        {{ if .Sections }}
+          {{ range .Sections }}
+            <article class="article">
+              <h2 class="article-title">
+                <a href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a>
+              </h2>
+              <small class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</small>
+            </article>
+          {{ end }}
+        {{ else }}
+          <section class="articles mt-0">
+            {{ range (.Paginate ( first 50 .Pages ).ByDate).Pages }}
+              <article class="article">
+                <h2 class="article-title">
+                  <a href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a>
+                </h2>
+              </article>
+            {{ end }}
+          </section>
+        {{ end }}
+      </section>
+			{{ partial "footer.html" . }}
+		</main>
+	</body>
+</html>
