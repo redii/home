@@ -56,9 +56,6 @@ main {
   margin-bottom: 0.6rem;
   line-height: 140%;
 }
-.article-title a {
-  display: block;
-}
 
 .article .date {
   display: block;
