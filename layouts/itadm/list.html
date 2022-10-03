@@ -5,8 +5,10 @@
 		<main>
       <header>
         <a class="site-title" href="/itadm" style="font-size:2em">Henry Akmann</a>
-        <br/>
-        <a href="{{ .Parent.Permalink }}" style="color: cyan">Zurück</a>
+        {{ if not (eq .Parent.Permalink "https://akmnn.de/") }}
+          <br/>
+          <a href="{{ .Parent.Permalink }}" style="color: cyan">Zurück</a>
+        {{ end }}
       </header>
       <div class="content">{{ .Content }}</div>
 			<section class="articles">

@@ -28,7 +28,7 @@ Eine genaue Funktionsbeschreibung zur Bedienung von APT finden Sie [hier](https:
   Sollte es wegen fehlenden Berechtigungen während der Installation zu Problemen kommen, können Sie mit dem Zusatz `sudo` vor dem apt Kommando die benötigten Rechte erlangen.
 {{< /collapsible >}}
 
-## 2. Öffnen Sie das Installationsverzeichnis des Bind Servers
+## 2. Installationsverzeichnis des Bind Servers öffnen
 
 Unter Linux werden Softwarepakete in der Regel im **/etc** Verzeichnis in einem eigenen Ordner installiert. Nutzen Sie die bekannten Befehle, um in diesen Ordner zu gelangen.
 

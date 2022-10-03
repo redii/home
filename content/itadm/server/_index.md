@@ -1,9 +1,8 @@
 ---
-title: "Serversysteme und Monitoring"
-date: 2020-12-20T19:49:07Z
-draft: false
+title: "Serversysteme und Cloudtechnologie"
+date: 2022-09-20T19:49:07Z
 ---
 
-# 🌐 Installation von Serversoftware
+# 🌐 Serversysteme und Cloudtechnologie
 
 Bitte mit der Bearbeitung der Aufgaben warten.
