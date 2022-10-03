@@ -6,6 +6,6 @@ tags: ["teaching"]
 
 # 👨‍🎓 IT-Administrator (IHK)
 
-Über diese Webseite möchte ich meine Unterlagen, Hilfestellungen und Aufgaben schnell und einfach für Teilnehmer der IT-Administrator Kurse bereitstellen.
+Auf dieser Webseite findet Ihr meine Unterlagen, Hilfestellungen und Aufgaben rund um den IT-Administrator Kurs am TA Bildungszentrum.
 
-### [Foliensätze](https://drive.google.com/open?id=1jAVLTz3SNmBbfHlRN9A_4Xw7nDfOsEpW)
+### [Meine Foliensätze](https://drive.google.com/open?id=1jAVLTz3SNmBbfHlRN9A_4Xw7nDfOsEpW)
