@@ -11,5 +11,5 @@ Sie werden weitergeleitet, wenn nicht klicken Sie [hier](/itadm).
 <script>
     setTimeout(() => {
         window.location.replace("https://akmnn.de/itadm")
-    }, 5000)
+    }, 3000)
 </script>
