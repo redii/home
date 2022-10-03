@@ -7,7 +7,7 @@
       {{ partial "bio.html" . }}
       {{ if (len .Site.Data.pages) }}
         <section class="articles">
-          <h2 class="heading">Pages</h2>
+          <h2 style="display: none">Pages</h2>
           {{ range .Site.Data.pages }}
           <article class="article" style="padding: 1rem">
             <h3 class="article-title">
