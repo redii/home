@@ -5,21 +5,37 @@
     <main>
       {{ partial "header.html" . }}
       {{ partial "bio.html" . }}
-      <section class="articles">
-        {{ range (.Paginate ( where site.RegularPages "Section" "posts" ).ByDate.Reverse).Pages }}
-        <article class="article">
-          <h2 class="article-title">
-            <a href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a>
-          </h2>
-          <small class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</small>
-          <div class="tags">
-            {{ range .Params.Tags }}
-            <a href="{{site.BaseURL}}tags/{{ . }}" class="tag">{{ . }}</a>
-            {{ end }}
-          </div>
-        </article>
-        {{ end }}
-      </section>
+      {{ if (len .Site.Data.pages) }}
+        <section class="articles">
+          <h2 class="heading">Pages</h2>
+          {{ range .Site.Data.pages }}
+          <article class="article" style="padding: 1rem">
+            <h3 class="article-title">
+              <a href="{{ .url }}" title="{{ .title }}" target="{{ .target }}"> {{ .title }} </a>
+            </h3>
+            <small>{{ .description}}</small>
+          </article>
+          {{ end }}
+        </section>
+      {{ end }}
+      {{ if (len (where site.RegularPages "Section" "posts")) }}
+        <section class="articles">
+          <h2>Posts</h2>
+          {{ range (.Paginate ( where site.RegularPages "Section" "posts" ).ByDate.Reverse).Pages }}
+          <article class="article">
+            <h3 class="article-title">
+              <a href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a>
+            </h3>
+            <small class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</small>
+            <div class="tags">
+              {{ range .Params.Tags }}
+              <a href="{{site.BaseURL}}tags/{{ . }}" class="tag">{{ . }}</a>
+              {{ end }}
+            </div>
+          </article>
+          {{ end }}
+        </section>
+      {{ end }}
       {{ partial "footer.html" . }}
     </main>
   </body>

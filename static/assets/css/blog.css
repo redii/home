@@ -139,7 +139,7 @@ main {
 
 @media screen and (max-width: 550px) {
   header .site-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .articles {
     row-gap: 1.2rem;

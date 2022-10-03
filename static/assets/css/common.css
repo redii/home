@@ -1,6 +1,14 @@
+h1 {
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
 .content a {
-  color: cyan;
-  border-bottom: 1px solid cyan;
+	color: cyan;
+	border-bottom: 1px solid cyan;
 }
 
 hr {
@@ -9,12 +17,4 @@ hr {
 	border-left: none!important;
 	border-right: none!important;
 	margin-bottom: 1.75rem!important;
-}
-
-h1 {
-	margin-bottom: 1em;
-}
-
-p {
-	margin-bottom: 1em;
 }
