@@ -10,7 +10,7 @@ minify = false
   email = "akmann.henry@gmail.com"
 
 [permalinks]
-  posts = "/:year/:month/:day/:filename"
+  posts = "/posts/:filename"
   pages = "/:slug"
 
 [taxonomies]
