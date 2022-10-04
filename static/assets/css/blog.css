@@ -98,7 +98,6 @@ main {
 .articles .article .article-title a {
   color: var(--white-2);
   font-weight: 100;
-  font-style: italic;
   font-size: 1.4rem;
   line-height: 130%;
 }

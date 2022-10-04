@@ -1,5 +1,5 @@
 ---
-title: "Linux und Unix"
+title: "🐧 Linux und Unix"
 date: 2020-12-26T09:30:34Z
 draft: false
 ---
