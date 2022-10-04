@@ -10,7 +10,7 @@
           <h2 style="display: none">Pages</h2>
           {{ range .Site.Data.pages }}
           <article class="article" style="padding: 1rem">
-            <h3 class="article-title">
+            <h3 class="article-title" style="font-style: inherit">
               <a href="{{ .url }}" title="{{ .title }}" target="{{ .target }}"> {{ .title }} </a>
             </h3>
             <small>{{ .description}}</small>
