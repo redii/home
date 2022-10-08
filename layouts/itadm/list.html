@@ -5,10 +5,8 @@
 		<main style="max-width: 1000px">
       <header>
         <a class="site-title" href="/itadm" style="font-size:2em">Henry Akmann</a>
-        {{ if not (eq .Parent.Permalink "https://akmnn.de/") }}
-          <br/>
-          <a href="{{ .Parent.Permalink }}" style="color: cyan">Zurück</a>
-        {{ end }}
+        <br/>
+        <a href="{{ .Parent.Permalink }}" style="color: cyan">Zurück</a>
       </header>
       <div class="content">{{ .Content }}</div>
 			<section class="articles">
@@ -22,15 +20,13 @@
             </article>
           {{ end }}
         {{ else }}
-          <section class="articles mt-0">
-            {{ range (.Paginate ( first 50 .Pages ).ByDate).Pages }}
-              <article class="article">
-                <h2 class="article-title">
-                  <a href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a>
-                </h2>
-              </article>
-            {{ end }}
-          </section>
+          {{ range (.Paginate ( first 50 .Pages ).ByDate).Pages }}
+            <article class="article">
+              <h2 class="article-title">
+                <a href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a>
+              </h2>
+            </article>
+          {{ end }}
         {{ end }}
       </section>
 			{{ partial "footer.html" . }}
