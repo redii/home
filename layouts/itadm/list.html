@@ -20,7 +20,7 @@
             </article>
           {{ end }}
         {{ else }}
-          {{ range (.Paginate ( first 50 .Pages ).ByDate).Pages }}
+          {{ range .Pages.ByDate }}
             <article class="article">
               <h2 class="article-title">
                 <a href="{{ .Permalink }}" title="{{ .Title }}"> {{ .Title }} </a>
