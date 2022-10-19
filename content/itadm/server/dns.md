@@ -1,5 +1,5 @@
 ---
-title: "Nameserver"
+title: "Nameserver - bind9"
 date: 2020-12-15T16:32:22Z
 draft: false
 ---

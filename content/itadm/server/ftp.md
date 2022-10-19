@@ -1,7 +1,6 @@
 ---
-title: "Fileserver"
+title: "Fileserver - vsftpd"
 date: 2020-12-20T19:50:56Z
-draft: false
 ---
 
 # Installation und Konfiguration - vsftpd
