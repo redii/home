@@ -3,7 +3,7 @@ title: "Fileserver - vsftpd"
 date: 2020-12-20T19:50:56Z
 ---
 
-# Installation und Konfiguration - vsftpd
+# Installation und Konfiguration
 
 unter Ubuntu 20.04 LTS
 

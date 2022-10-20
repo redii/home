@@ -4,7 +4,7 @@ date: 2020-12-16T16:32:22Z
 draft: false
 ---
 
-# Installation und Konfiguration - Apache2
+# Installation und Konfiguration
 unter Ubuntu 20.04 LTS
 
 ## 🚀 Ziel der Aufgabe
