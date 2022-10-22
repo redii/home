@@ -31,7 +31,7 @@ body {
   background-color: var(--gray-5);
 }
 body {
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 header {
   padding: 2rem 0 4rem 0;
@@ -131,6 +131,9 @@ main {
 /* media query */
 
 @media screen and (max-width: 750px) {
+  body {
+    padding: 1.5rem;
+  }
   header .site-title {
     font-size: 3rem;
   }
