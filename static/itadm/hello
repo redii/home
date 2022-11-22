@@ -1,0 +1,4 @@
+#! /bin/bash
+
+echo "Hallo Kurs"
+echo "Heute ist der $(date +%d.%m.%Y)"
