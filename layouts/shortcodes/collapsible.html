@@ -1,8 +1,10 @@
-<a class="collapsible" type="button" onclick="toggleCollapse(this)">
-  {{.Get `label`}} +
-</a>
-<div class="collapsible-content" style="display: none;">
-  <p>{{.Inner | markdownify}}</p>
+<div class="collapsible">
+  <a class="collapsible-label" type="button" onclick="toggleCollapse(this)">
+    {{.Get `label`}} +
+  </a>
+  <div class="collapsible-content" style="display: none;">
+    <p>{{.Inner | markdownify}}</p>
+  </div>
 </div>
 
 <script>
@@ -21,6 +23,10 @@ var toggleCollapse = (element) => {
 
 <style>
 .collapsible {
+  margin-bottom: 1.75rem;
+}
+
+.collapsible-label {
   text-decoration-line: none;
   cursor: pointer;
 }

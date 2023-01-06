@@ -107,7 +107,7 @@ Kopieren Sie die db.empty Datei mit Hilfe des folgenden Kommandos (Copy).
 
 `nano db.itadm.de`
 
-![DNS Zonendatei Vorlage](/itadm/server/dns_zone.png)
+![DNS Zonendatei Vorlage](/itadm/images/dns_zone.png)
 {{< /collapsible >}}
 
 ## 6. Starten Sie den Server neu

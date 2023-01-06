@@ -10,7 +10,7 @@
       </header>
       <section class="article">
         <div class="article-header">
-          <h2 class="article-title">{{ .Title }}</h2>
+          <h1 class="article-title">{{ .Title }}</h1>
           <small class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</small>
           <div class="tags">
             {{ range $.Params.tags }}
