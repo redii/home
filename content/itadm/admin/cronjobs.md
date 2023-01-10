@@ -3,7 +3,7 @@ title: "⏰ Cron Jobs einrichten"
 date: 2020-12-31T9:22:11Z
 ---
 
-Häufig kommt es vor das bestimmte Prozesse in regelmäßigen Abständen durchgeführt werden müssen. Unter Linux gibt es für diese sich wiederholenden Aufgaben die sogenannten Cron Jobs. Mit Hilfe von Cron Jobs können Befehle zu ganz genau definierbaren Zeitpunkten regelmäßig ausgeführt.
+Häufig kommt es vor das bestimmte Prozesse in regelmäßigen Abständen durchgeführt werden müssen. Unter Linux gibt es für diese sich wiederholenden Aufgaben die sogenannten Cron Jobs. Mit Hilfe von Cron Jobs können Befehle zu ganz genau definierbaren Zeitpunkten regelmäßig ausgeführt werden.
 
 **Ein paar Beispiele könnten sein...**
 - Jede Nacht um 2 Uhr wird ein Backup gemacht
