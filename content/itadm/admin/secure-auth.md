@@ -90,7 +90,8 @@ Am einfachsten ist es den Inhalt der `id_rsa.pub` Datei per copy & paste auf den
 $ mkdir .ssh
 $ nano ~/.ssh/authorized_keys
 
-  In diese Datei muss nun der Inhalt der id_rsa.pub Datei eingefügt werden. Anschließend speichern und schließen.
+  In diese Datei muss nun der Inhalt der id_rsa.pub Datei eingefügt werden.
+  Anschließend speichern und schließen.
 ```
 
 Wichtig! `~` steht für das jeweilige Homeverzeichnis eines Benutzers. Wenn Sie auf ihrem Serversystem z.B. den User `akmann` registriert haben, muss die `authorized_keys` Datei also unter dem folgenden Pfad liegen: `/home/akmann/.ssh/authorized_keys`
