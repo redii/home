@@ -84,7 +84,14 @@ $ ssh-keygen
 ```
 
 **Den Public Key auf das Serversystem kopieren**  
-Am einfachsten ist es die Datei mit Hilfe von [WinSCP](https://winscp.net/eng/download.php) oder einer ähnlichen Software auf das Serversystem hochzuladen. Die `id_rsa.pub` Datei muss auf dem Serversystem im `~/.ssh/authorized_keys/` Ordner abgelegt werden.
+Am einfachsten ist es den Inhalt der `id_rsa.pub` Datei per copy & paste auf den Server zu bringen.
 
-Wichtig! `~` steht für das jeweilige Homeverzeichnis eines Benutzers. Wenn Sie auf ihrem Serversystem z.B. den User `akmann` registriert haben, muss die id_rsa.pub Datei also wie folgt abgelegt werden: `/home/akmann/.ssh/authorized_keys/id_rsa.pub`
+```shell
+$ mkdir .ssh
+$ nano ~/.ssh/authorized_keys
+
+  In diese Datei muss nun der Inhalt der id_rsa.pub Datei eingefügt werden. Anschließend speichern und schließen.
+```
+
+Wichtig! `~` steht für das jeweilige Homeverzeichnis eines Benutzers. Wenn Sie auf ihrem Serversystem z.B. den User `akmann` registriert haben, muss die `authorized_keys` Datei also unter dem folgenden Pfad liegen: `/home/akmann/.ssh/authorized_keys`
 {{</collapsible>}}
