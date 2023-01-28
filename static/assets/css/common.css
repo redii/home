@@ -23,3 +23,8 @@ hr {
 .article-title a {
   display: block;
 }
+
+.refer-a-friend {
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+}

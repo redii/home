@@ -81,7 +81,7 @@ $ tar -zcvf archive.tar.gz dir1/    # Erstellt ein Archiv namens archive.tar.gz 
 $ ls -l
 drw-rw-r-- 1 akmann akmann 1092 Jan  5 14:10 dir1
 drw-rw-r-- 1 akmann akmann 1092 Jan  5 14:10 dir2
--rw-rw-r-- 1 akmann akmann 1092 Jan  5 14:11 archive.tar.gt
+-rw-rw-r-- 1 akmann akmann 1092 Jan  5 14:11 archive.tar.gz
 ```
 {{</collapsible>}}
 
