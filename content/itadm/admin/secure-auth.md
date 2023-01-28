@@ -53,7 +53,7 @@ Die Datei wie folgt anpassen:
 PermitRootLogin no           # Root Login verbieten
 AllowUsers akmann            # Login für neuen Benutzer erlauben
 
-$ service sshd restart       # Server neustarten
+$ service ssh restart       # Server neustarten
 ```
 {{</collapsible>}}
 
