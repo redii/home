@@ -27,7 +27,7 @@ In Ihrem Arbeitsverzeichnis liegt zudem die `.secret` Datei, können Sie sie seh
 Finden Sie mit Hilfe des `man` Kommandos heraus, wie sie sich diese Dateien ebenfalls im Verzeichnis anzeigen lassen können.
 
 ## Aufgabe 3
-Erstellen Sie einen neuen Ordner "linktest" in Ihrem Homeverzeichnis und legen Sie anschließend einen Hard- sowie einen Softlink zu der `artikel.txt` Datei in diesem Ordner an.
+Erstellen Sie einen neuen Ordner `linktest` in Ihrem Homeverzeichnis und legen Sie anschließend einen Hard- sowie einen Softlink zu der `artikel.txt` Datei in diesem Ordner an.
 
 Prüfen Sie die Funktionalität der beiden Links, in dem Sie sich den Inhalt der `artikel.txt` Datei mit Hilfe dieser ausgeben lassen.
 
