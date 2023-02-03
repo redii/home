@@ -88,7 +88,7 @@ main {
   line-height: 180%;
 }
 .content p {
-  margin: 0 0 1.75rem 0;
+  margin: 0 0 1.5rem 0;
   padding: 0;
 }
 .content h1 {
@@ -115,7 +115,8 @@ main {
 .content h4,
 .content h5,
 .content h6 {
-  margin: 1.75rem 0;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 .content blockquote {
   padding-left: 1.42188rem;

@@ -17,6 +17,8 @@ draft: false
 Verwenden Sie den `echo` Befehl um den Text “Hello World” im Terminalfenster auszugeben.
 
 ## Aufgabe 2
+**Führen Sie zunächst diesen Befehl aus**: `apt install ncal`
+
 Verwenden Sie den `cal` Befehl um sich eine Übersicht über den aktuellen Monat auszugeben.
 
 ## Aufgabe 3
