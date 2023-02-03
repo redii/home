@@ -50,13 +50,13 @@ Stellen Sie sicher, dass Sie in Ihrem persönlichen Homeverzeichnis sind:
 
 Erstellen Sie nun einen neuen Ordner in Ihrem Homeverzeichnis mit dem Namen "test". Kopieren Sie anschließend die `/etc/passwd` Datei in den gerade erstellten Ordner.
 
-## Aufgabe 5
-Durch Aufgabe 4 sollte nun die folgende Struktur in Ihrem Homeverzeichnis vorliegen.
+Nun sollte nun die folgende Struktur in Ihrem Homeverzeichnis vorliegen.
 
 ```
-.
+~
 └── test
     └── passwd
 ```
 
+## Aufgabe 5
 Probieren Sie nun aus den angelegten Ordner "test" mit seinem Inhalt zu löschen. Recherchieren Sie wofür das `-r` Flag bei dem `rm` Kommando genutzt wird.
