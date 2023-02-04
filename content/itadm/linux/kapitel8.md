@@ -17,7 +17,7 @@ Erstellen Sie eine eigene Umgebungsvariable mit einem beliebigen Wert den Sie se
 
 ## Aufgabe 2
 
-Lassen Sie sich die **PS1** Variable ausgeben.  Haben Sie eine Idee wofür dieser Text genutzt werden könnte? Recherchieren Sie den Verwendungszweck der Variable.
+Lassen Sie sich die **PS1** Variable ausgeben.  Haben Sie eine Idee wofür dieser Text genutzt werden könnte? [Recherchieren Sie den Verwendungszweck der Variable](https://wiki.ubuntuusers.de/Bash/Prompt/).
 
 ## Aufgabe 3
 
@@ -38,4 +38,4 @@ Prüfen Sie die bestehenden Umgebungsvariablen mit Hilfe des `printenv` Kommando
 
 Recherchieren Sie den Zweck und die Funktionsweise der `.profile` Datei, welche sich in Ihrem Homeverzeichnis befindet.
 
-Nutzen Sie anschließend diese Datei, um selbst erstellte Umgebungsvariablen persistent bzw. dauerhaft zu definieren. Prüfen Sie die Persistenz indem Sie sich, wie in Aufgabe 5 zuvor, abmelden.
+Nutzen Sie anschließend diese Datei, um selbst erstellte Umgebungsvariablen persistent bzw. dauerhaft zu definieren. Prüfen Sie die Persistenz indem Sie sich, wie in Aufgabe 5 abmelden und anschließend wieder neu anmelden.

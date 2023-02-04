@@ -30,6 +30,6 @@ Führen Sie das folgende Kommando aus:
 
 `apt install -y cowsay fortune-mod`
 
-Dadurch wurden zwei zusätzliche Pakete `cowsay`und `fortune` auf Ihrem System installiert, welche Sie nun in der Kommandozeile nutzen können.
+Dadurch wurden zwei zusätzliche Pakete `cowsay` und `fortune` auf Ihrem System installiert, welche Sie nun in der Kommandozeile nutzen können.
 
-Testen Sie die Kommandos und versuchen Sie abschließend die Ausgabe des `fortune` Kommandos in das `cowsay` Kommando umzuleiten.
+Testen Sie die Kommandos und versuchen Sie abschließend die Ausgabe des `fortune` Kommandos in das `cowsay` Kommando mit Hilfe des Pipe-Operators `|` umzuleiten.

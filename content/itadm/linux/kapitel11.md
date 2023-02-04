@@ -34,6 +34,6 @@ Erstellen Sie im Home Verzeichnis des neuen Benutzers eine Textdatei, welche Sie
 Gucken Sie sich zunächst die Berechtigungen nach dem Erstellen an und definieren Sie im Anschluss, dass niemand außer dem Besitzer und der Gruppe diese Datei lesen darf.
 
 ## Aufgabe 3
-Wechseln Sie den Benutzer nun wieder zurück und navigieren Sie zu der Datei, welche Sie zuvor angelegt haben.
+Verschieben Sie die Datei nun in den `/tmp` Ordner wo Sie für alle Benutzer des Systems sichtbar ist.
 
-Können Sie sie im Ordner sehen? Versuchen Sie außerdem die Datei zu öffnen bzw. ausgeben zu lassen.
+Erstellen Sie einen weiteren Benutzer und loggen Sie sich als dieser um. Versuchen Sie nun den Inhalter der im `/tmp` Ordner liegende Datei auszugeben.
