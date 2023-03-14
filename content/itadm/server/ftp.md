@@ -63,15 +63,15 @@ Statusmeldung des Diensts: `service vsftpd status`
 
 ## 4. Verbinden Sie sich per FTP als Root-User
 
-Um sich mit dem Server per FTP zu verbinden, benötigen Sie zunächst eine entsprechende Client-Software. Ich empfehle Ihnen hierbei das Programm WinSCP, welches Sie hier herunterladen können.
+Um sich mit dem Server per FTP zu verbinden, benötigen Sie zunächst eine entsprechende Client-Software. Ich empfehle Ihnen hierbei das Programm WinSCP, welches Sie [hier](https://winscp.net/eng/download.php) herunterladen können.
 
 Installieren Sie das Programm und verbinden Sie sich anschließend mit dem Server als Root-User per FTP.
 
-![WinSCP Anmeldung per FTP](/itadm/winscp.png)
+![WinSCP Anmeldung per FTP](/itadm/images/winscp_ftp.png)
 
 ## 5. Legen Sie zusätzliche Benutzer an
 
-Aufgrund der Tatsache, dass der FTP-Server Systemuser für die Authentifizierung bei Nutzung des Dienstes einsetzt, können Sie einfach einen zusätzlichen Benutzer unter dem Betriebssystem anlegen.
+Da der FTP-Server Systemuser für die Authentifizierung bei Nutzung des Dienstes einsetzt, können Sie einfach einen zusätzlichen Benutzer unter dem Betriebssystem anlegen.
 
 Verbinden Sie sich anschließend mit dem neu angelegten Benutzer. Merken Sie einen Unterschied zur vorherigen Anmeldung als Root-User?
 
@@ -88,7 +88,7 @@ Um einen neuen Systemuser anzulegen nutzen Sie das folgende Kommando.
 
 Was ist Vorraussetzung für die Nutzung von SFTP? Bemerken Sie Unterschiede in der Nutzung?
 
-![WinSCP Anmeldung per SFTP](/itadm/winscp2.png)
+![WinSCP Anmeldung per SFTP](/itadm/images/winscp_sftp.png)
 
 ## 7. Webseite mit GUI anpassen
 Nachdem Sie sich per FTP oder SFTP auf den Server verbunden haben, können Sie auch die Dateien aus der vorherigen Aufgaben nun mit einem grafischen Texteditor einsehen. Navigieren Sie dafür in einen der Ordner, machen Sie einen Rechtsklick auf die gewünschte Datei und drücken anschließend auf `Editieren > Editieren mit...`.
