@@ -8,8 +8,8 @@ draft: false
 | ------------- | ------------- | ----- |
 | `cat <Pfad>` | Gibt den Inhalt einer Datei im Terminalfenster aus. | |
 | `grep <Suchmuster>` | Sucht nach dem angegebenen Muster in einer Eingabe. | `-i` Case insensitive |
-| `cut` | Sucht nach dem angegebenen Muster in einer Eingabe. | `-i` Case insensitive |
-| `sort` | Unterteil eine Eingabe in Spalten anhand eines Trennzeichens. | `-d<Zeichen>` Definiert das Trennzeichen <br>`-f<Zahl>` Definiert die Ausgabespalte |
+| `cut` | Sucht nach dem angegebenen Muster in einer Eingabe. | `-d<Zeichen>` Definiert das Trennzeichen <br>`-f<Zahl>` Definiert die Ausgabespalte |
+| `sort` | Unterteil eine Eingabe in Spalten anhand eines Trennzeichens. | `-n` Numerisch sortieren |
 
 ## Aufgabe 1
 Erstellen Sie ein Verzeichnis `greptest/` und darin die folgenden Dateien:
