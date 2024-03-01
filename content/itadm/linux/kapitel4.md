@@ -14,7 +14,7 @@ draft: false
 
 Führen Sie vor der Bearbeitung folgendes Kommando aus:
 
-`wget akmnn.de/itadm/artikel.txt; wget akmnn.de/itadm/.secret;`
+`wget akmnn.de/itadm/artikel.txt akmnn.de/itadm/.secret`
 
 Dadurch werden die Dateien `artikel.txt` und `.secret` auf Ihr System in das aktuelle Arbeitsverzeichnis heruntergeladen.
 
