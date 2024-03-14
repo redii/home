@@ -24,7 +24,10 @@ hr {
   display: block;
 }
 
-.refer-a-friend {
+.itadm-footer {
 	margin-top: 4rem;
 	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
