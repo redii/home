@@ -31,3 +31,7 @@ hr {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
+.itadm-footer a {
+	color: cyan;
+}
