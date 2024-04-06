@@ -31,7 +31,7 @@ Sollte es wegen fehlenden Berechtigungen während der Installation zu Problemen 
 
 Bevor Sie über den Fileserver auf das System zugreifen können, müssen Sie zunächst Konfigurationen vornehmen. Zum Beispiel ist das Schreiben bzw. Verändern von Daten auf dem Server per FTP standardmäßig verboten und muss daher zunächst freigegeben werden.
 
-Anders als bei den bisherigen Serverarten finden Sie die Konfigurationsdatei des vsftpd direkt unter **/etc/vstfpd.conf**. In dieser Datei müssen Sie nun den Parameter **WRITE_ENABLE** auf **YES** setzen.
+Anders als bei den bisherigen Serverarten finden Sie die Konfigurationsdatei des vsftpd direkt unter **/etc/vsftpd.conf**. In dieser Datei müssen Sie nun den Parameter **WRITE_ENABLE** auf **YES** setzen.
 
 {{< collapsible label="Hinweis" >}}
 Öffnen Sie die Datei zunächst mit dem folgenden Kommando.
