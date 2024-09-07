@@ -1,24 +1,42 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ if eq .IsHome true }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
-  {{ if .IsPage -}}
-  <link rel="stylesheet" href="{{site.BaseURL}}assets/css/post.css" />
-  <script defer src="{{site.BaseURL}}assets/js/lbox.js"></script>
-  {{ else }}
-  <link rel="stylesheet" href="{{site.BaseURL}}assets/css/blog.css" />
-  {{ end}}
-  <link rel="stylesheet" href="{{site.BaseURL}}assets/css/common.css" />
-  {{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
+<title>{{ .Title }}</title>
 
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+<!-- Meta Tags Start -->
+<meta charset="utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script defer data-domain="akmnn.de" src="https://plausible.akmnn.de/js/plausible.js"></script>
-</head>
+<meta name="title" content="{{ .Title }}">
+<meta name="description" content="{{ .Description }}">
+<meta name="author" content="Henry Akmann">
+
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Description }}">
+<meta property="og:locale" content="de_DE">
+<!-- Meta Tags End -->
+
+<!-- Favicons Start -->
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="manifest" href="/favicons/site.webmanifest">
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5b7bd5">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<!-- Favicons End -->
+
+<!-- Tailwind CSS Links Start -->
+{{ $styles := resources.Get "css/styles.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+<!-- Tailwind CSS Links End -->
+
+<!-- Animate on Scroll -->
+{{ $aos := resources.Get "utils/aos@2.3.4/aos.css" | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $aos.RelPermalink }}" integrity="{{ $aos.Data.Integrity }}">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">

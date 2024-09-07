@@ -1,0 +1,8 @@
+baseURL: "https://akmann.dev/"
+languageCode: "en-us"
+title: "Henry Akmann"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

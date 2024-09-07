@@ -1,0 +1,5 @@
+<!-- Animate on Scroll Start -->
+{{ $aos := resources.Get "/utils/aos@2.3.4/aos.js" | minify | fingerprint }}
+<script src="{{ $aos.RelPermalink }}"></script>
+<script>AOS.init();</script>
+<!-- Animate on Scroll End -->
