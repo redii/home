@@ -1,15 +1,53 @@
 {{ define "main" }}
-<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-  <div class="pt-12 flex flex-col lg:flex-row gap-12 items-center">
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
+  <div class="flex flex-col lg:flex-row gap-12 items-center">
     <img
       alt="Henry Akmann Profilbild"
       src="https://avatars.githubusercontent.com/u/14221837"
-      class="w-56 h-56 sm:w-80 sm:h-80 rounded-full shadow-lg duration-200 hover:scale-105 hover:ring-4 hover:ring-emerald-600"
-      data-aos="fade-up" />
-    <div class="text-center lg:text-left">
-      <h1 data-aos="fade-up" data-aos-delay="100" class="!text-5xl">Hallo <img src="/emojis/waving-hand.png" alt="Waving hand emoji" class="inline w-12 h-12 relative bottom-2" /></h1>
-      <p data-aos="fade-up" data-aos-delay="200">Willkommen auf meiner Webseite!<br/>Mein Name ist Henry Akmann aus Hannover und ich programmiere und baue gerne Dinge...</p>
-      <a data-aos="fade-up" data-aos-delay="300" href="#projects" class="mt-20 block">↓ Take a look at my projects ↓</a>
+      class="w-64 h-64 sm:w-72 sm:h-72 rounded-full shadow-lg duration-200 hover:scale-105" />
+    <div>
+      <div class="prose lg:prose-lg text-center lg:text-left">
+        <h1>{{ .Params.hero.heading }}</h1>
+        <p class="text-xl font-light">{{ .Params.hero.text }}</p>
+      </div>
+      <ul class="mt-8 flex flex-row gap-4 justify-center lg:justify-normal">
+        {{ range .Params.hero.socials }}
+          <li>
+            <a href="{{ .url }}" target="_blank">
+              <img src="{{ .icon }}" alt="{{ .name }}" class="w-6 h-6" />
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-100 py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ .Page.Params.projects.heading }}</h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600">{{ .Page.Params.projects.subheading }}</p>
+    </div>
+    <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+      {{ $projects := ($.Site.GetPage "projects" .Section).Pages }}
+      {{ range first 3 $projects }}
+        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+          <img src="{{ .Params.image }}" alt="{{ .Params.title }} - Project" class="absolute inset-0 -z-10 h-full w-full object-cover">
+          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+          <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+
+          <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+            <time datetime="2020-03-16" class="mr-8">{{ .Params.date.Format "January 2006" }}</time>
+          </div>
+          <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+            <a href="{{ .RelPermalink }}">
+              <span class="absolute inset-0"></span>
+              {{ .Params.title }}
+            </a>
+          </h3>
+        </article>
+      {{ end }}
     </div>
   </div>
 </div>

@@ -7,6 +7,7 @@
       class="mb-16 mx-auto max-w-3xl w-full max-h-96 rounded-md" />
   {{ end }}
   <div class="mx-auto prose md:prose-md lg:prose-lg">
+    <a href="{{ .Parent.RelPermalink }}" class="block mb-6 hover-underline-animation">&larr; Zurück</a>
     {{ if .Params.tags }}
       <p class="text-base font-semibold leading-7 text-emerald-500">
         {{ range $index, $tag := .Params.tags }}

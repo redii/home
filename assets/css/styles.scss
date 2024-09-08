@@ -4,20 +4,22 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #F3F4F6;
 }
 
-a {
-  font-family: 'Courier New', Courier, monospace;
-  transition-duration: 200ms;
+.prose a:not(.hover-underline-animation) {
+  font-weight: 600;
+  transition: 200ms;
 }
 
-a:hover:not(.hover-underline-animation) {
-  color: #059669;
+.prose a:hover:not(.hover-underline-animation) {
+  color: #10B981;
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
+  text-decoration-line: none !important;
 }
 
 .hover-underline-animation::after {
@@ -28,7 +30,7 @@ a:hover:not(.hover-underline-animation) {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #059669;
+  background-color: #10B981;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -36,4 +38,21 @@ a:hover:not(.hover-underline-animation) {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.prose :not(pre) > code {
+  color: var(--tw-prose-pre-code);
+  font-size: 0.8em;
+  font-weight: 400;
+  background-color: var(--tw-prose-pre-bg);
+  border-radius: .375rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+}
+
+.prose :where(code):not(:where([class~=not-prose],[class~=not-prose] *))::before,
+.prose :where(code):not(:where([class~=not-prose],[class~=not-prose] *))::after {
+  content: "";
 }

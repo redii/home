@@ -1,0 +1,31 @@
+<div class="tooltip-label">
+  {{.Get `label` | markdownify}}
+  <span class="tooltip-text">{{.Inner}}</span>
+</div>
+
+<style>
+.tooltip-label {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  color: rgba(255, 255, 255, 0.84);
+  background-color: #2e2e33;
+  width: 15em;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 0.8em;
+  text-align: center;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+.tooltip-label:hover .tooltip-text {
+  visibility: visible;
+}
+</style>
